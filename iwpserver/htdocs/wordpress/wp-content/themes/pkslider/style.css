@@ -1,0 +1,508 @@
+/*
+	Theme Name: PKslider 1.2
+	Author: Irina Antonova
+	Author URI: http://maniuniweb.free.bg
+	Version: 1.2
+	License: http://creativecommons.org/licenses/by-nd/4.0/
+	
+	This theme is licensed under a Creative Commons Attribution-NoDerivatives 4.0 International License.
+*/
+
+/* Reset */
+
+body, 
+div, 
+h1, 
+p, 
+img, 
+header, 
+footer, 
+section, 
+small,
+label {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+/* Generic */
+
+html{
+	font-size: 62.5%;
+	position: relative;
+	min-height: 100%;
+}
+html,
+body{
+	height: 100%;
+}
+body{
+	padding-bottom: 60px;
+	background: #cdced0 no-repeat; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #fefefe 20%, #cdced0 100%) no-repeat; /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(20%,#fefefe), color-stop(100%,#cdced0)) no-repeat; /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #fefefe 20%,#cdced0 100%) no-repeat; /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #fefefe 20%,#cdced0 100%) no-repeat; /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #fefefe 20%,#cdced0 100%) no-repeat; /* IE10+ */
+	background: radial-gradient(ellipse at center,  #fefefe 20%,#cdced0 100%) no-repeat; /* W3C */
+	color: #004822;
+	font: normal 18px/150% 'Myriad Pro', Tahoma, sans-serif;
+	font: normal 1.8rem/150% 'Myriad Pro', Tahoma, sans-serif;
+
+}
+h1 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font: bold 52px 'Myriad Pro', Tahoma, sans-serif;
+	font: bold 5.2rem 'Myriad Pro', Tahoma, sans-serif;
+	text-align: center;
+}
+p {
+	margin-top: 20px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+/* Images */
+
+/* Floats and sizing */
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.section.fp-section.active, .fp-tableCell {
+	height: auto !important;
+}
+
+/* Header & Footer*/
+
+.green {
+	background-color: #004822;
+}
+.site-description {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 70px;
+	margin-top: 0;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.logo {
+	margin-top: 35px;
+}
+.logo:focus {
+	outline: none;
+	margin-top: 35px;
+}
+.logo img:focus {
+	outline: none;
+}
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+.footer-line {
+	margin-top: 13px;
+	margin-bottom: 7px;
+	height: 13px;
+}
+#colophon {
+	text-align: center;
+}
+#credits {
+	font: condensed 13px 'Myriad Pro', Tahoma, sans-serif;
+	font: condensed 1.3rem 'Myriad Pro', Tahoma, sans-serif;
+}
+
+/* Arrows */
+
+.fp-controlArrow.fp-prev {
+	border-left-width: 20px !important;
+	border-color: transparent !important;
+	background: url('images/arrow-prev.png') no-repeat center;
+	cursor: pointer;
+}
+.fp-controlArrow.fp-next {
+	border-right-width: 20px !important;
+	border-color: transparent !important;
+	background: url('images/arrow-next.png') no-repeat center;
+	cursor: pointer;
+}
+.contact-btn {
+	display: block;
+	height: 150px;
+	width: 311px;
+	margin: 200px auto;
+	background: url('images/contact-btn.png') no-repeat center;
+}
+
+/* Contact form */
+.form{
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 90px;
+	padding-bottom: 50px;
+	border: 1px solid #cdd1cf;
+	background-color: rgba(255,255,255, 0.1);
+	background: url('images/logo_small.png') no-repeat 3% 3%;
+}
+.wpcf7-form p {
+	font-size: 15px;
+	font-size: 1.5rem;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+.wpcf7-form .wpcf7-text {
+	width: 280px;
+	border: 1px solid #cdd1cf;
+	height: 18px;
+	margin-top: 5px;
+	padding: 3px;
+	font: normal 12px 'Myriad Pro', Tahoma, sans-serif;
+	font: normal 1.2rem 'Myriad Pro', Tahoma, sans-serif;
+}
+.wpcf7-form textarea{
+	width: 280px;
+	height: 150px;
+	margin-top: 5px;
+	padding: 3px;
+	border: 1px solid #cdd1cf;
+	font: normal 12px 'Myriad Pro', Tahoma, sans-serif;
+	font: normal 1.2rem 'Myriad Pro', Tahoma, sans-serif;
+}
+.wpcf7-submit{
+	display: block;
+	width: 76px;
+	height: 29px;
+	color: #ffffff;
+	background-color: #004822;
+	border: none;
+	font: normal 18px 'Myriad Pro', Tahoma, sans-serif;
+	font: normal 1.8rem 'Myriad Pro', Tahoma, sans-serif;
+}
+div.wpcf7-validation-errors{
+	font: normal 12px 'Myriad Pro', Tahoma, sans-serif;
+	font: normal 1.2rem 'Myriad Pro', Tahoma, sans-serif;
+	border: 1px solid red;
+}
+
+/* Main */
+
+#content {
+	min-height: 100%;
+	position: relative;
+}
+.line-separator{
+	width: 250px;
+	height:1px;
+	background:#898989;
+	border-bottom:1px solid #898989;
+}
+.par-main {
+	width: 40%;
+	margin-bottom: 40px;
+}
+.main-img{
+	width: 52%;
+	max-width: 1000px;
+	min-width: 220px;
+	height: auto;
+	padding: 5px;
+	border: 1px solid #898989;
+}
+#shadow{
+	content: url('images/form-shadow.png') no-repeat center;
+	margin: 0 auto;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1600px){
+
+	html{
+		font-size: 58%;
+	}
+	.line-separator{
+		width: 230px;
+	}
+	.main-img {
+		/* width: 900px; */
+		height: auto;
+	}
+	.par-main {
+		margin-bottom: 35px;
+	}
+	.site-description {
+		margin-bottom: 60px;
+	}
+	.logo {
+		padding: 8px 0;
+		margin-top: 20px;
+	}
+	.logo img{
+		width: 250px;
+		height: auto;
+	}
+	.footer-line {
+		margin-top: 13px;
+		margin-bottom: 7px;
+		height: 8px;
+	}
+	.contact-btn {
+		margin: 200px auto;
+		background: url('images/contact-btn.png') no-repeat center;
+		background-size: 281px auto;
+	}
+}
+
+@media screen and (max-width:1440px){
+	html{
+		font-size: 55%;
+	}
+	.main-img {
+		/* width: 800px; */
+	}
+	.site-description {
+		margin-bottom: 50px;
+	}
+	.contact-btn {
+		margin: 200px auto;
+		background: url('images/contact-btn.png') no-repeat center;
+		background-size: 235px auto;
+	}
+	.form{
+		width: 540px;
+		padding-left: 120px;
+		padding-right: 120px;
+		padding-top: 60px;
+		padding-bottom: 20px;
+		background-size: 7%;
+	}
+	#shadow{
+		width: 500px;
+	}
+
+}
+
+@media screen and (max-width:1366px){
+
+	html{
+		font-size: 53%;
+	}
+	.main-img {
+		/* width: 700px; */
+	}
+	.site-description {
+		margin-bottom: 40px;
+	}
+	.par-main {
+		margin-bottom: 25px;
+	}
+	.footer-line {
+		margin-top: 8px;
+	}
+	.contact-btn {
+		margin: 200px auto;
+		background: url('images/contact-btn.png') no-repeat center;
+		background-size: 200px auto;
+	}
+
+}
+
+@media screen and (max-width:1280px){
+
+	html{
+		font-size: 50%;
+	}
+	.line-separator{
+		width: 220px;
+	}
+}
+
+@media screen and (max-width:1024px){
+
+	.logo {
+		padding: 6px 0;
+		margin-top: 10px;
+	}
+	.logo img{
+		width: 220px;
+		height: auto;
+	}
+	h1{
+		margin-bottom: 12px;
+	}
+	.site-description {
+		margin-bottom: 20px;
+	}
+	.line-separator{
+		width: 210px;
+	}
+	.par-main {
+		margin-bottom: 15px;
+		width: 55%;
+	}
+	.main-img {
+		/* width: 650px; */
+	}
+
+}
+
+@media screen and (max-height:601px){
+
+	html{
+		font-size: 40%;
+	}
+
+}
+
+@media screen and (max-width:820px){
+
+	html{
+		font-size: 48%;
+	}
+	.line-separator{
+		width: 200px;
+	}
+	.main-img {
+		/* width: 600px; */
+		height: auto;
+	}
+	.logo {
+		padding: 4px 0;
+	}
+	.logo img{
+		width: 200px;
+		height: auto;
+	}
+	.footer-line {
+		margin-top: 8px;
+		margin-bottom: 4px;
+		height: 5px;
+	}
+	.contact-btn {
+		margin: 200px auto;
+		background: url('images/contact-btn.png') no-repeat center;
+		background-size: 180px auto;
+	}
+	.form{
+		width: 480px;
+		padding-left: 80px;
+		padding-right: 80px;
+		padding-top: 25px;
+		padding-bottom: 5px;
+	}
+	.fp-controlArrow.fp-prev {
+		border-left-width: 15px !important;
+		background-size: 12px;
+	}
+	.fp-controlArrow.fp-next {
+		border-right-width: 15px !important;
+		background-size: 12px;
+	}
+	#shadow{
+		width: 420px;
+	}
+
+}
+
+@media only screen and (max-width:750px){
+
+	.main-img {
+		/* width: 550px; */
+	}
+	.par-main {
+		width: 65%;
+	}
+
+}
+
+@media only screen and (max-width:640px){
+
+	.main-img {
+		/* width: 500px; */
+	}
+	.contact-btn {
+		margin: 200px auto;
+		background: url('images/contact-btn.png') no-repeat center;
+		background-size: 180px auto;
+	}
+	.form{
+		width: 430px;
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+	.fp-controlArrow.fp-prev {
+		border-left-width: 10px !important;
+		background-size: 10px;
+	}
+	.fp-controlArrow.fp-next {
+		border-right-width: 10px !important;
+		background-size: 10px;
+	}
+	#shadow{
+		width: 390px;
+	}
+
+}
+
+@media only screen and (max-width:480px){
+
+	.main-img {
+		/* width: 350px; */
+	}
+	.line-separator{
+		width: 150px;
+	}
+	.form{
+		width: 355px;
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+	.wpcf7-form .wpcf7-text {
+		width: 250px;
+	}
+	.wpcf7-form textarea{
+		width: 250px;
+		height: 120px;
+	}
+
+}
+
+@media only screen and (max-width:380px){
+
+	h1{
+		margin-bottom: 10px;
+	}
+	.logo img{
+		width: 160px;
+		height: auto;
+	}
+	.main-img {
+		/* width: 220px; */
+	}
+	.form{
+		width: 230px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.wpcf7-form .wpcf7-text {
+		width: 180px;
+	}
+	.wpcf7-form textarea{
+		width: 180px;
+		height: 120px;
+	}
+	#shadow{
+		width: 200px;
+	}
+
+}
